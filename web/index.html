@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<body style="background-color:grey;">
+		
+		<h1 align = center>Programación para las Comunicaciones - PPC</h1>
+		<h1 align = center>Pedro Nicolas Gomariz</h1>
+		<br>
+		<h1 align = center>Servidor de DATOS METEOROLÓGICOS</h1>
+		<br>
+		
+		<h3>-Servidor Web de Meteorología</h3>
+		Para acceder a los Datos Meteorológicos por HTTP haz <a href="http://localhost:8080/meteorologia.html">click aqui</a>.
+		<br>
+		Para acceder a los Datos Meteorológicos por HTTPS haz <a href="https://localhost:4433/meteorologia.html">click aqui</a>.
+		<br><br>
+		
+		<h3>-Servidor SMTP de Meteorología</h3>
+		Para obtener los Datos Meteorológicos mediante correo electrónico siga las instrucciones:<br><br>
+		-Envíe un email a “pedro.nicolasg@um.es”.<br>
+		-Espere entre 20 y 40 segundos.<br>
+		-Recibirá un email con los últimos datos meteorológicos registrados.<br>
+		<a href="mailto:pedro.nicolasg@um.es">Click para enviar email</a>.
+		<br><br>
+
+		<h3>-API REST de Meteorología</h3>
+		URLs de ejemplo:<br><br>
+		-<a target="blank" href="http://localhost:8080/apirest/meteorologia">http://localhost:8080/apirest/meteorologia</a> 
+		Para ver los ultimos registros meteorologicos desde la API Rest.<br><br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/time?cod=json&est=murcia&time=4000">http://localhost:8080/apirest/time?cod=json&est=murcia&time=4000</a> 
+		Para establecer el tiempo de envio en milisegundos (4, en este caso) de la estacion de Murcia desde la API Rest.<br><br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/stop?cod=json&est=murcia">http://localhost:8080/apirest/stop?cod=json&est=murcia</a> 
+		Para pausar el envio de mensajes de la estacion de Murcia desde la API Rest.<br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/start?cod=json&est=murcia">http://localhost:8080/apirest/start?cod=json&est=murcia</a> 
+		Para reanudar el envio de mensajes de la estacion de Murcia desde la API Rest.<br><br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/codeJSON?cod=json&est=murcia">http://localhost:8080/apirest/codeJSON?cod=json&est=murcia</a> 
+		Para indicar a la estacion de Murcia que nos envie los mensajes usando JSON desde la API Rest.<br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/codeXML?cod=json&est=murcia">http://localhost:8080/apirest/codeXML?cod=json&est=murcia</a> 
+		Para indicar a la estacion de Murcia que nos envie los mensajes usando XML desde la API Rest.<br><br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/tempC?cod=json&est=murcia">http://localhost:8080/apirest/tempC?cod=json&est=murcia</a> 
+		Para indicar a la estacion de Murcia que nos envie la variable temperatura en grados CELSIUS desde la API Rest.<br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/tempK?cod=json&est=murcia">http://localhost:8080/apirest/tempK?cod=json&est=murcia</a> 
+		Para indicar a la estacion de Murcia que nos envie la variable temperatura en grados KELVIN desde la API Rest.<br>
+		
+		-<a target="blank" href="http://localhost:8080/apirest/tempF?cod=json&est=murcia">http://localhost:8080/apirest/tempF?cod=json&est=murcia</a> 
+		Para indicar a la estacion de Murcia que nos envie la variable temperatura en grados FAHRENHEIT desde la API Rest.<br>
+
+	</body>
+</html>
